@@ -10,11 +10,6 @@ import { RouterOutlet } from '@angular/router';
 export class App {
   protected readonly title = signal('prova');
 
-  //Objectiu de la sesio 2: veure la diferencia entre JS i TS --> TS =JS + tipus
-  function saludar(nom){
-    return nom.toUpperCase();
-  }
-
-  saluda(40);
+  
 
 }
