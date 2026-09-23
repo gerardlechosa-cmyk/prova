@@ -1,4 +1,7 @@
 
+// PART A: Interfície Joc
+// Tema: Videojocs
+
 export interface Joc {
     id: number;
     nom: string;
@@ -6,6 +9,5 @@ export interface Joc {
     disponible: boolean;
     genere: string;
     descripcio?: string;
-
-
+    puntuacio?: number;
 }
