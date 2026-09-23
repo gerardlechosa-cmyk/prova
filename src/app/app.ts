@@ -67,7 +67,7 @@ export class App {
     productes: Producte[] = [this.producte, this.producte2];
 
     p1 = new ProducteClass('Teclat', 89.99);
-    p2 = new ProducteClass('Ratolí', 49.99);
+    p2 = new ProducteClass('Monitor', 49.99);
 
     constructor() {
     console.log(this.p1.toString());
