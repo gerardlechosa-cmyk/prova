@@ -75,14 +75,14 @@ export class App {
   p1 = new ProducteClass('Teclat', 89.99);
   p2 = new ProducteClass('Monitor', 49.99);
 
-  // ─── PART B: Array de jocs (minim 5 elements) ────────────────────────────
+  //PART B: Array de jocs (minim 5 elements) 
   jocs: Joc[] = [
-    { id: 1, nom: 'The Legend of Zelda', preu: 59.99, disponible: true,  genere: 'Aventura', descripcio: 'Un classic inoblidable', puntuacio: 9.8 },
-    { id: 2, nom: 'FIFA 25',             preu: 69.99, disponible: true,  genere: 'Esport',   puntuacio: 7.5 },
-    { id: 3, nom: 'Cyberpunk 2077',      preu: 29.99, disponible: false, genere: 'RPG',      descripcio: 'Mon obert futurista', puntuacio: 8.1 },
-    { id: 4, nom: 'Minecraft',           preu: 19.99, disponible: true,  genere: 'Sandbox',  descripcio: 'Construeix el teu mon' },
-    { id: 5, nom: 'Elden Ring',          preu: 49.99, disponible: true,  genere: 'RPG',      puntuacio: 9.5 },
-    { id: 6, nom: 'Fortnite',            preu: 0,     disponible: false, genere: 'Battle Royale' },
+    { id: 1, nom: 'The Legend of Zelda', preu: 59.99, disponible: true, genere: 'Aventura', descripcio: 'Un classic inoblidable', puntuacio: 9.8 },
+    { id: 2, nom: 'FIFA 25', preu: 69.99, disponible: true, genere: 'Esport', puntuacio: 7.5 },
+    { id: 3, nom: 'Cyberpunk 2077', preu: 29.99, disponible: false, genere: 'RPG', descripcio: 'Mon obert futurista', puntuacio: 8.1 },
+    { id: 4, nom: 'Minecraft', preu: 19.99, disponible: true, genere: 'Sandbox', descripcio: 'Construeix el teu mon' },
+    { id: 5, nom: 'Elden Ring', preu: 49.99, disponible: true, genere: 'RPG', puntuacio: 9.5 },
+    { id: 6, nom: 'Fortnite', preu: 0, disponible: false, genere: 'Battle Royale' },
   ];
 
   // Retorna els jocs disponibles (disponible === true)
@@ -108,7 +108,7 @@ export class App {
     console.log(this.p1.toString());
     console.log(this.p2.descompte());
 
-    // ─── PART B: proves ──────────────────────────────────────────────────────
+    // PART B: proves 
     console.log('--- Jocs actius ---');
     this.getActius().forEach(j => console.log(this.formatarElement(j)));
 
@@ -116,7 +116,7 @@ export class App {
     const trobat = this.findById(3);
     console.log(trobat ? this.formatarElement(trobat) : 'No trobat');
 
-    // ─── PART C: Cistella ────────────────────────────────────────────────────
+    // PART C: Cistella 
     const cistella = new Cistella('Gerard');
     cistella.afegirJoc(this.jocs[0]);
     cistella.afegirJoc(this.jocs[4]);
@@ -124,13 +124,13 @@ export class App {
     cistella.eliminarJoc(1);
     console.log(`Cistella despres d'eliminar id=1 - Total: ${cistella.preuTotal}EUR`);
 
-    // ─── Funcions auxiliars ───────────────────────────────────────────────────
-    console.log(saludar('Gerard'));        // Hola, Gerard!
-    console.log(esMajorEdat(20));          // true
-    console.log(esMajorEdat(15));          // false
-    console.log(sumarArray([10, 20, 30])); // 60
+    // Funcions auxiliars 
+    console.log(saludar('Gerard'));
+    console.log(esMajorEdat(20));
+    console.log(esMajorEdat(15));
+    console.log(sumarArray([10, 20, 30]));
 
-    // ─── Classe Alumne ────────────────────────────────────────────────────────
+    //  Classe Alumne 
     const alumne1 = new Alumne('Gerard', 20, 'DAW', [7, 8, 6, 9]);
     const alumne2 = new Alumne('Anna', 17, 'DAM', [4, 3, 5, 2]);
     console.log(alumne1.presentar());
